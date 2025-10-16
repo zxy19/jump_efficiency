@@ -22,8 +22,8 @@ public class Config {
             .comment("Show particle when apply an extra tick")
             .define("show_particle", true);
     private static final ModConfigSpec.BooleanValue USE_BLOCK_BLACKLIST = BUILDER
-            .comment("Use black to check if block can be apply extra ticks")
-            .define("use_block_blacklist", true);
+            .comment("Use blacklist to check if block can be apply extra ticks")
+            .define("use_block_blacklist", false);
 
     private static final ModConfigSpec.DoubleValue POSSIBILITY_POINTS = BUILDER
             .comment("The possibility to apply an extra tick. Every time when the entity jumps, then pick a number between 0 and 1 and remove this number from possibility point value. If the remain point is greater than 0, then apply an extra tick and repeat the steps before.")
